@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — NOVA Discord Bot | PROJECT.BOTS</title>
+  <meta name="description" content="Official Privacy Policy for NOVA Discord Bot (NOVA-CREATIONS V2). Learn how we handle and protect your Discord server data.">
+  <style>
+    :root {
+      --bg-primary: #0b0e14;
+      --bg-secondary: #121722;
+      --bg-card: #182030;
+      --border-color: #232d42;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #5865f2;
+      --accent-hover: #4752c4;
+      --accent-glow: rgba(88, 101, 242, 0.15);
+      --success: #22c55e;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      border-bottom: 1px solid var(--border-color);
+      padding: 3rem 1.5rem 2.5rem;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: var(--accent-glow);
+      color: var(--accent);
+      border: 1px solid rgba(88, 101, 242, 0.3);
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .meta-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .meta-bar span strong {
+      color: var(--text-muted);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+    }
+
+    .callout {
+      background-color: var(--bg-secondary);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2.5rem;
+      border-top: 1px solid var(--border-color);
+      border-right: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .callout h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.25rem;
+    }
+
+    .callout p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    section {
+      background-color: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.75rem;
+    }
+
+    section h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.75rem;
+    }
+
+    section p {
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    section p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0.5rem;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    ul li strong {
+      color: var(--text-main);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: var(--bg-card);
+      color: #ffffff;
+      font-weight: 600;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+    }
+
+    td {
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+    }
+
+    tr:nth-child(even) td {
+      background-color: rgba(24, 32, 48, 0.4);
+    }
+
+    .badge-no {
+      background-color: rgba(239, 68, 68, 0.15);
+      color: var(--danger);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .badge-yes {
+      background-color: rgba(34, 197, 94, 0.15);
+      color: var(--success);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background-color 0.2s ease;
+      margin-top: 0.75rem;
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      background-color: var(--bg-secondary);
+    }
+
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 1.75rem;
+      }
+      section {
+        padding: 1.25rem 1.25rem;
+      }
+      .meta-bar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-badge">PROJECT.BOTS Security Platform</div>
+    <h1>Privacy Policy</h1>
+    <p>Official Privacy Policy and Data Practices for the NOVA Discord Bot (NOVA-CREATIONS V2)</p>
+    <div class="meta-bar">
+      <span><strong>Effective Date:</strong> November 16, 2026</span>
+      <span><strong>Last Updated:</strong> November 16, 2026</span>
+      <span><strong>Version:</strong> 2.0.0</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="callout">
+      <h3>Summary of Core Commitments</h3>
+      <p>NOVA is an autonomous security, moderation, anti-nuke, and utility bot. <strong>We do not sell, rent, monetize, or broker user data.</strong> We do not store message content, private DMs, or voice audio. Message content is processed in volatile memory in real time solely to execute requested commands and enforce server safety rules (AutoMod / anti-spam), and is immediately discarded.</p>
+    </div>
+
+    <!-- Section 1 -->
+    <section id="introduction">
+      <h2>1. Introduction & Scope</h2>
+      <p>This Privacy Policy explains how <strong>NOVA</strong> ("the Application", "the Bot", "we", "us", or "our"), operated by the <strong>PROJECT.BOTS</strong> team, collects, uses, processes, and protects information when you invite, interact with, or utilize NOVA within your Discord server or via direct interactions.</p>
+      <p>By adding NOVA to your Discord server or using its features, you agree to the collection and handling of data in accordance with this Privacy Policy and Discord's Terms of Service and Developer Policy.</p>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="data-collected">
+      <h2>2. Information We Collect</h2>
+      <p>NOVA only collects and stores data strictly necessary to fulfill its defensive security, moderation, administrative, and utility features. All stored data is tied to unique numeric Discord identifiers.</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Data Category</th>
+              <th>Specific Data Collected</th>
+              <th>Off-Platform Storage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Server Metadata</strong></td>
+              <td>Discord Guild ID, server name, server icon hash, owner user ID, configured bot command prefix.</td>
+              <td><span class="badge-yes">Stored</span> (Required for guild config)</td>
+            </tr>
+            <tr>
+              <td><strong>Security & Anti-Nuke</strong></td>
+              <td>Security thresholds, whitelisted user IDs, trusted role IDs, quarantine role IDs, security incident counts.</td>
+              <td><span class="badge-yes">Stored</span> (Defense rules)</td>
+            </tr>
+            <tr>
+              <td><strong>Structural Snapshots</strong></td>
+              <td>Channel names, positions, permission overwrites, role names, colors, and permissions (baseline for Self-Heal rollback).</td>
+              <td><span class="badge-yes">Stored</span> (Structure only, no messages)</td>
+            </tr>
+            <tr>
+              <td><strong>Moderation Cases</strong></td>
+              <td>Case ID, target user ID, moderator user ID, moderation action (ban, kick, mute, warn), reason, timestamp.</td>
+              <td><span class="badge-yes">Stored</span> (Guild audit records)</td>
+            </tr>
+            <tr>
+              <td><strong>Utility Settings</strong></td>
+              <td>Auto-role IDs, welcome/goodbye channel IDs, voice channel IDs, reminder text and target trigger timestamp.</td>
+              <td><span class="badge-yes">Stored</span> (Guild utility)</td>
+            </tr>
+            <tr>
+              <td><strong>Leveling & Economy Counters</strong></td>
+              <td>User ID, guild ID, numeric XP count, numeric level, numeric wallet/bank counters, message count tally.</td>
+              <td><span class="badge-yes">Stored</span> (Numeric counts only)</td>
+            </tr>
+            <tr>
+              <td><strong>Message Content</strong></td>
+              <td>Raw text of messages sent in server text channels.</td>
+              <td><span class="badge-no">Not Stored</span> (In-memory real-time processing only)</td>
+            </tr>
+            <tr>
+              <td><strong>Voice Audio & DMs</strong></td>
+              <td>Voice chat audio streams, direct private messages (outside of bot interaction commands).</td>
+              <td><span class="badge-no">Never Collected</span></td>
+            </tr>
+            <tr>
+              <td><strong>Presence / Activity</strong></td>
+              <td>User games, custom statuses, streaming activities, client platforms.</td>
+              <td><span class="badge-no">Never Collected</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="message-content">
+      <h2>3. Message Content & Transient Processing</h2>
+      <p>NOVA requires the <strong>Message Content</strong> privileged intent solely for real-time, in-memory operations:</p>
+      <ul>
+        <li><strong>Prefix Command Invocation:</strong> Detecting messages starting with the server's configured command prefix (default <code>&</code>) to parse command names and command parameters.</li>
+        <li><strong>Automated Moderation (AutoMod):</strong> Scanning incoming message text against guild-configured prohibited words and regex patterns to filter toxicity and offensive content.</li>
+        <li><strong>Anti-Spam & Anti-Flood Heuristics:</strong> Evaluating message frequency, duplicate character flooding, excessive caps, and mass mentions to prevent raid attacks.</li>
+        <li><strong>Link-Only Channel Protection:</strong> Verifying whether messages in designated "Do Not Chat" media/link channels contain required links.</li>
+      </ul>
+      <p><strong>Crucial Clarification:</strong> Raw message content is evaluated in volatile memory and is <strong>never written to our persistent database or disk</strong>. Once a message is verified or a command is dispatched, the message content is released from memory. We do not maintain historical logs of message contents.</p>
+    </section>
+
+    <!-- Section 4 -->
+    <section id="data-usage">
+      <h2>4. How We Use Information</h2>
+      <p>We process the collected data strictly for the following purposes:</p>
+      <ul>
+        <li>Enforcing server protection rules, anti-raid mechanisms, and anti-nuke safeguards.</li>
+        <li>Restoring deleted channels and roles through the autonomous Self-Heal engine when an unauthorized nuke event occurs.</li>
+        <li>Maintaining accurate moderation case ledgers and administrative logs.</li>
+        <li>Dispatching server welcome and goodbye announcements.</li>
+        <li>Fulfilling scheduled user reminders and birthday notifications.</li>
+        <li>Displaying real-time server statistics (member counts, role counts).</li>
+      </ul>
+      <p><strong>We do NOT:</strong></p>
+      <ul>
+        <li>Sell, trade, or monetize any user or server data under any circumstance.</li>
+        <li>Use Discord user data or message content to train machine learning (ML) or artificial intelligence (AI) models.</li>
+        <li>Track, profile, or analyze user activity across multiple Discord servers.</li>
+        <li>Serve third-party advertisements or trackers.</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section id="data-storage-security">
+      <h2>5. Data Storage, Security & Retention</h2>
+      <p><strong>Data Storage:</strong> Data is persisted in an isolated local SQLite database running on dedicated hosting infrastructure. Cryptographic tokens and administrative secrets are encrypted at rest using AES-256-GCM encryption.</p>
+      <p><strong>Data Retention:</strong></p>
+      <ul>
+        <li><strong>Active Server Data:</strong> Stored for as long as NOVA remains in the server to ensure ongoing configuration and security enforcement.</li>
+        <li><strong>Moderation Case Logs:</strong> Retained for the historical record of the respective server's administration until deleted by server administrators or upon server removal.</li>
+        <li><strong>Scheduled Reminders:</strong> Automatically purged from storage once delivered or cancelled.</li>
+        <li><strong>Guild Removal:</strong> When NOVA is kicked or removed from a Discord server, server-specific configuration records become inactive and are eligible for scheduled deletion.</li>
+      </ul>
+    </section>
+
+    <!-- Section 6 -->
+    <section id="third-party">
+      <h2>6. Third-Party Sharing & External Services</h2>
+      <p>NOVA does not share your data with external third parties, marketing services, or analytical aggregators. The only third-party infrastructure involved is:</p>
+      <ul>
+        <li><strong>Discord Inc.:</strong> All bot traffic flows through Discord's official Gateway and REST APIs pursuant to Discord's Developer Terms.</li>
+        <li><strong>Lavalink Audio Node:</strong> Audio streaming operations connect to an internal, self-hosted Lavalink instance to decode audio tracks. Audio streams are not recorded or saved.</li>
+      </ul>
+    </section>
+
+    <!-- Section 7 -->
+    <section id="user-rights">
+      <h2>7. User Rights & Data Deletion Requests</h2>
+      <p>In accordance with Discord Developer Policies and applicable data protection regulations (such as GDPR and CCPA), users and server administrators have the following rights:</p>
+      <ul>
+        <li><strong>Right to Know:</strong> You may request information on what data NOVA holds regarding your server or user ID.</li>
+        <li><strong>Right to Deletion (Right to Erasure):</strong> You may request the complete deletion of all records associated with your Discord user ID or Discord server.</li>
+      </ul>
+      <p><strong>How to Request Data Deletion:</strong></p>
+      <div class="contact-card">
+        <p>To request permanent deletion of your server or personal data, you can:</p>
+        <ul>
+          <li>Join our official Discord Support Server and open a support ticket under <strong>Data Privacy Request</strong>.</li>
+          <li>Server administrators can use the built-in configuration reset commands (such as <code>&amp;security reset</code> and backup deletion tools) to clear stored configurations directly.</li>
+        </ul>
+        <p>Requests submitted through our support server are processed within <strong>30 days</strong> of verification.</p>
+        <a href="https://discord.gg/secure-development-official-india-1377670752832192582" class="btn" target="_blank" rel="noopener noreferrer">Join Discord Support Server</a>
+      </div>
+    </section>
+
+    <!-- Section 8 -->
+    <section id="children">
+      <h2>8. Children's Privacy</h2>
+      <p>NOVA does not knowingly collect or solicit personal data from anyone under the age of 13 (or the minimum age required to use Discord in your jurisdiction). In accordance with Discord's Terms of Service, all users must meet Discord's age requirements. If we learn that personal data of a minor has been collected, it will be deleted immediately.</p>
+    </section>
+
+    <!-- Section 9 -->
+    <section id="updates">
+      <h2>9. Changes to This Privacy Policy</h2>
+      <p>We reserve the right to update or modify this Privacy Policy as our features evolve or to comply with updated Discord Developer Policies and applicable laws. When revisions are made, the "Last Updated" timestamp at the top of this page will be amended. Continued use of NOVA after any modifications signifies your acceptance of the revised policy.</p>
+    </section>
+
+    <!-- Section 10 -->
+    <section id="contact">
+      <h2>10. Contact Information</h2>
+      <p>If you have any questions, concerns, or inquiries regarding this Privacy Policy or NOVA's data practices, please reach out through our official channels:</p>
+      <div class="contact-card">
+        <p><strong>Project:</strong> NOVA-CREATIONS V2 / PROJECT.BOTS</p>
+        <p><strong>Discord Support Server:</strong> <a href="https://discord.gg/secure-development-official-india-1377670752832192582" style="color: var(--accent);" target="_blank" rel="noopener noreferrer">https://discord.gg/secure-development-official-india-1377670752832192582</a></p>
+        <p><strong>Primary Developer Discord ID:</strong> <code>1345422877159067698</code></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 NOVA-CREATIONS & PROJECT.BOTS Platform. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">NOVA is an independent project and is not affiliated with or endorsed by Discord Inc.</p>
+  </footer>
+
+</body>
+</html>
